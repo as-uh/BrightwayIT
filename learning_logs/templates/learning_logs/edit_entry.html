@@ -7,9 +7,9 @@
  <p> Edit entry:</p>
 
  <form action="{%url'learning_logs:edit_entry.id%}"method='post'>
- {% csrf_token%}
- {{forms.as_p}}
-  <button name ="submit"> Save changes</button>
+   {% csrf_token%}
+   {{forms.as_p}}
+   <button name ="submit"> Save changes</button>
  </form>
 
 {% endblock content %}
